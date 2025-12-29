@@ -1,5 +1,6 @@
 import Background from "../../public/assets/background.png";
 import About from "./About";
+import Studio from "./studio/Studio";
 export default function HomePage() {
   return (
     <>
@@ -15,14 +16,18 @@ export default function HomePage() {
 
           <div className="absolute inset-0 flex flex-col justify-center items-center text-white px-4 z-10">
             <h1 className="text-4xl sm:text-4xl md:text-4xl mb-6 text-center drop-shadow-lg font-bold tracking-tight">
-              Welcome
+              Selamat Datang
             </h1>
 
             <p className="text-center text-lg md:text-lg text-white/90 max-w-3xl font-semibold leading-relaxed">
-              find the best studio only here
+              Temukan studio terbaik hanya disini.
             </p>
           </div>
         </div>
+      </section>
+
+      <section className="mt-20">
+        <Studio />
       </section>
 
       <section className="mt-20 ">
