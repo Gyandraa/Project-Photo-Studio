@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import Background from "../../public/assets/background.png";
+import Photo from "../Components/Photo";
 import About from "./About";
-import Studio from "./studio/Studio";
+// import Studio from "./studio/Studio";
 export default function HomePage() {
   return (
     <>
@@ -26,9 +28,46 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="mt-20">
-        <Studio />
-      </section>
+      <div className="mt-25 text-center">
+        <h1 className="font-semibold font-serif text-2xl">Kategori Studio</h1>
+      </div>
+      <div className="flex gap-20 justify-center mt-10">
+        <Link to="/studio-small">
+          <div className="w-72 bg-white rounded-xl shadow-lg hover:scale-105 transition-transform">
+            <Photo />
+            <div className="p-4">
+              <h3 className="text-lg font-bold">Studio Small</h3>
+              <p className="text-sm text-red-500 font-semibold">
+                Rp 100.000,00
+              </p>
+            </div>
+          </div>
+        </Link>
+
+        <Link to="/studio-medium">
+          <div className="w-72 bg-white rounded-xl shadow-lg hover:scale-105 transition-transform">
+            <Photo />
+            <div className="p-4">
+              <h3 className="text-lg font-bold">Studio Medium </h3>
+              <p className="text-sm text-red-500 font-semibold">
+                Rp 200.000,00
+              </p>
+            </div>
+          </div>
+        </Link>
+
+        <Link to="/studio-big">
+          <div className="w-72 bg-white rounded-xl shadow-lg hover:scale-105 transition-transform">
+            <Photo />
+            <div className="p-4">
+              <h3 className="text-lg font-bold">Studio Big</h3>
+              <p className="text-sm text-red-500 font-semibold">
+                Rp 500.000,00
+              </p>
+            </div>
+          </div>
+        </Link>
+      </div>
 
       <section className="mt-20 ">
         <About />

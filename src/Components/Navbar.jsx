@@ -13,7 +13,7 @@ export default function Navbar() {
             Home
           </Link>
           <Link className="hover:text-teal-400 transition" to="/review">
-            Reviews
+            Review
           </Link>
           <Link className="hover:text-teal-400 transition" to="/contact">
             Contact
