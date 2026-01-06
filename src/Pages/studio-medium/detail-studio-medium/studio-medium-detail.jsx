@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom";
 import Banner from "../../../Components/Banner";
 import DetailSectionMedium from "../../../Components/detail-section-medium";
+import Photo from "../../../Components/Photo";
 export default function StudioSedangDetail() {
   const { id } = useParams();
   const data = {
@@ -41,29 +42,36 @@ export default function StudioSedangDetail() {
         <h2 className="font-semibold text-3xl text-center mt-15">
           Detail Studio
         </h2>
-        <div className="flex gap-10  mt-10 mb-20">
-          <div className="w-2xl h-full rounded-xl shadow-lg ml-30 mt-10 hover-scale-105 transition-transform">
+        <div className="flex gap-10 border-4 rounded-2xl p-5 border-gray-200 mt-10 mb-20">
+          <div className="w-2xl h-full rounded-xl shadow-lg ml-30 mt-25 hover-scale-105 transition-transform">
             <Photo />
           </div>
           <div className="flex-col space-y-2">
+            <h2 className="text-3xl font-bold mb-5">Deskripsi</h2>
             <div>
-              <h3 className="font-bold text-xl mb-2">Harga</h3>
-              <p className="font-semibold font-sans">Rp 200.000,00 / sesi</p>
-              <p className="font-semibold font-sans">Satu sesi 25 menit</p>
+              <h3 className="font-semibold text-xl mb-2">Harga</h3>
+              <p className="font-sans">Rp 200.000,00 / sesi</p>
+              <p className="font-sans">Satu sesi 25 menit</p>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-2">Kapasitas</h3>
-              <p className="font-semibold font-sans">Maksimal 5 orang</p>
+              <h3 className="font-semibold text-xl mb-2">Kapasitas</h3>
+              <p className="font-sans">Maksimal 5 orang</p>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-2">Mendapatkan</h3>
-              <p className="font-semibold font-sans">10 file foto edit</p>
-              <p className="font-semibold font-sans">4 foto cetak</p>
+              <h3 className="font-semibold text-xl mb-2">Mendapatkan</h3>
+              <p className="font-sans">10 file foto edit</p>
+              <p className="font-sans">4 foto cetak</p>
             </div>
             <div>
-              <h3 className="font-bold text-xl mb-2">Jam Operasional</h3>
-              <p className="font-semibold font-sans">10.00 - 19.00</p>
+              <h3 className="font-semibold text-xl mb-2">Jam Operasional</h3>
+              <p className="font-sans">10.00 - 19.00</p>
             </div>
+            <button
+              className="px-6 py-2 rounded-lg bg-amber-500 text-white font-semibold
+                   hover:bg-amber-600 transition duration-200 shadow-md"
+            >
+              Booking
+            </button>
           </div>
         </div>
       </section>
