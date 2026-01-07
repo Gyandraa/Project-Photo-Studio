@@ -51,7 +51,7 @@ export default function StudioKecilDetail() {
             <Photo />
           </div>
           <div className="flex-col space-y-2 rounded-2xl">
-            <h2 className="text-3xl font-bold mb-5">Deskripsi</h2>
+            <h2 className="text-2xl font-bold mb-5">Deskripsi</h2>
             <div>
               <div>
                 <h3 className="font-semibold text-xl mb-2">Harga</h3>

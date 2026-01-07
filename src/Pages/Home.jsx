@@ -29,7 +29,7 @@ export default function HomePage() {
       </section>
 
       <div className="mt-25 text-center">
-        <h1 className="font-semibold font-serif text-2xl">Kategori Studio</h1>
+        <h1 className="font-semibold font-serif text-3xl">Kategori Studio</h1>
       </div>
 
       <div className="flex gap-20 justify-center mt-10">

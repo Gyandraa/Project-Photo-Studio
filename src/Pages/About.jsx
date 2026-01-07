@@ -4,7 +4,9 @@ export default function About() {
     <>
       <section id="about" className=" text-slate-100 py-24">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold mb-6 text-black">Tentang kami</h2>
+          <h2 className="text-3xl font-semibold mb-6 font-serif text-black">
+            Tentang kami
+          </h2>
 
           <div className="flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="max-w-2xl">
@@ -36,14 +38,14 @@ export default function About() {
 
       <section className="py-20 bg-gray-50">
         <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-4xl font-bold text-center mb-4">
+          <h2 className="text-3xl font-semibold font-serif text-center mb-4">
             Kenapa Memilih Kami
           </h2>
           <p className="text-center text-gray-600 mb-12">
             Kami memberikan pengalaman fotografi terbaik untuk setiap momen Anda
           </p>
 
-          <div className="grid gap-8 md:grid-cols-3">
+          <div className="grid gap-8 md:grid-cols-4">
             <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
               <h3 className="text-xl font-semibold mb-3">Studio Nyaman</h3>
               <p className="text-gray-600">
@@ -63,6 +65,16 @@ export default function About() {
               <h3 className="text-xl font-semibold mb-3">Peralatan Modern</h3>
               <p className="text-gray-600">
                 Didukung kamera dan lighting modern untuk hasil maksimal.
+              </p>
+            </div>
+
+            <div className="bg-white p-8 rounded-2xl shadow-lg text-center">
+              <h3 className="text-xl font-semibold mb-3">
+                Pegawai Profesional
+              </h3>
+              <p className="text-gray-600">
+                Yang pastinya memiliki pengalaman yang tinggi dan menghasilkan
+                kualitas terbaik untuk anda.
               </p>
             </div>
           </div>
