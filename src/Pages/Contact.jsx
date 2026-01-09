@@ -1,9 +1,14 @@
+import Banner from "../Components/Banner";
+
 export default function Contact() {
   return (
     <>
-      <section className="mt-20">
-        <h1>Contact Me</h1>
-        <div></div>
+      <section>
+        <div>
+          <h1 className="text-3xl mt-20 font-serif text-center font-bold">
+            Hubungi kami
+          </h1>
+        </div>
       </section>
     </>
   );
